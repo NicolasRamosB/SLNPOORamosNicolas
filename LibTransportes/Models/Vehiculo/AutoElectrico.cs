@@ -22,12 +22,12 @@ namespace LibTransportes.Models.Vehiculo
 
         public override string Acelerar()
         {
-            return base.Acelerar();
+            return "Acelera";
         }
 
         public override string Frenar()
         {
-            return base.Frenar();
+            return "Frenar"; ;
         }
         public virtual string Imprimir(AutoElectrico autoElectrico)
         {

@@ -31,20 +31,21 @@ namespace LibTransportes.Models.Vehiculo
             Remolque = null;
             return "Se desacoplo el remolque";
         }
-
-        public override string Acelerar()
-        {
-            return base.Acelerar();
-        }
-
-        public override string Frenar()
-        {
-            return base.Frenar();
-        }
+        
 
         public virtual string Imprimir(Camion camion)
         {
             return camion.ToString();
+        }
+
+        public override string Acelerar()
+        {
+            return "Acelera";
+        }
+
+        public override string Frenar()
+        {
+            return "Frenar"; ;
         }
     }
 }

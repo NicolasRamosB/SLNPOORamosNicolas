@@ -19,15 +19,10 @@ namespace LibTransportes.Models.Vehiculo
         public int Ruedas { get; set; }
         public string Modelo { get; set; }
 
-        public virtual string Acelerar()
-        {
-            return "Acelera ";
-        }
+        public abstract string Acelerar();
 
-        public virtual string Frenar()
-        {
-            return "Frena";
-        }
+
+        public abstract string Frenar();
 
         public virtual string Imprimir( Vehiculos vehiculos)
         {
