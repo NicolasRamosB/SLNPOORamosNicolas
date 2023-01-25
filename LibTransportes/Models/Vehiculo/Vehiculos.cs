@@ -24,12 +24,15 @@ namespace LibTransportes.Models.Vehiculo
 
         public abstract string Frenar();
 
-        public virtual string Imprimir( Vehiculos vehiculos)
+        public virtual string Imprimir()
         {
-            return vehiculos.ToString();
+            return
+                $"Rueda: {Ruedas}\n" +
+                $"Modelo: {Modelo}\n";
+
+               
         }
-
-
+  
 
     }
 }

@@ -29,9 +29,11 @@ namespace LibTransportes.Models.Vehiculo
         {
             return "Frenar"; ;
         }
-        public virtual string Imprimir(AutoElectrico autoElectrico)
+        public virtual string Imprimir()
         {
-            return autoElectrico.ToString();
+            return base.Imprimir() + $"Bateria: {Bateria}\n" +
+                $"Puertas: {Puertas}\n" +
+                $"Velocidad: {Velocidad}";
         }
     }
 }

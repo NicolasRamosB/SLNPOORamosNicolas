@@ -23,12 +23,7 @@ namespace PresentaciónVehiculos.App
         {
             Camion camion = new Camion(6, "Mercedez Benz", 10000.233 );
 
-            MessageBox.Show( $"Ruedas: {camion.Ruedas}" +
-                $"\nModelo: {camion.Modelo}" +
-                $"\nCapacidad en Kg: {camion.Capacidad}" +
-                $"\nAceleracion: {camion.Acelerar()}" +
-                $"\nFrenar: {camion.Frenar()}" +
-                $"Remolque: {camion.QuitarRemolque()}");
+            MessageBox.Show(camion.Imprimir());
         }
 
         private void btnRemolque_Click(object sender, EventArgs e)

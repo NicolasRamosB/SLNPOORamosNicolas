@@ -33,9 +33,10 @@ namespace LibTransportes.Models.Vehiculo
         }
         
 
-        public virtual string Imprimir(Camion camion)
+        public override string Imprimir()
         {
-            return camion.ToString();
+            return base.Imprimir() + $"Capacidad: {Capacidad}\n" +
+                $"Remolque: {QuitarRemolque()}";
         }
 
         public override string Acelerar()
